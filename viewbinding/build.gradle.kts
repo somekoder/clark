@@ -5,14 +5,15 @@ plugins {
 }
 
 android {
-    namespace = "com.somekoder.clark.mvi"
+    namespace = "com.somekoder.clark.viewbinding"
     compileSdk = 33
 
     defaultConfig {
-        minSdk = 26
+        minSdk = 21
         targetSdk = 33
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -28,26 +29,21 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    publishing {
-        singleVariant("release") {
-            withSourcesJar()
-            withJavadocJar()
-        }
+    buildFeatures {
+        viewBinding = true
+        dataBinding = true
     }
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.5.1")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
 }
 
 publishing {
     publications {
         register<MavenPublication>("release") {
             groupId = "com.somekoder.clark"
-            artifactId = "mvi"
+            artifactId = "viewbinding"
             version = "1.0.0"
 
             afterEvaluate {
