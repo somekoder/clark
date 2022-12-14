@@ -15,4 +15,5 @@ The clark libraries were created to simplify writing complex android application
 #### Importing the modules
 
 	implementation("com.github.SomeKoder.clark:mvi:$latestVersion")
+    implementation("com.github.SomeKoder.clark:viewbindin:$latestVersion")
 	...
