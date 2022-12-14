@@ -7,13 +7,13 @@ The clark libraries were created to simplify writing complex android application
 #### Adding Jitpack to your project
 
 	allprojects {
-		repositories {
-			maven { url 'https://jitpack.io' }
-		}
+	    repositories {
+		maven { url 'https://jitpack.io' }
+	    }
 	}
 
 #### Importing the modules
 
-	implementation("com.github.SomeKoder.clark:mvi:$latestVersion")
-    implementation("com.github.SomeKoder.clark:viewbindin:$latestVersion")
-	...
+    implementation("com.github.SomeKoder.clark:mvi:$latestVersion")
+    implementation("com.github.SomeKoder.clark:viewbinding:$latestVersion")
+    ...
