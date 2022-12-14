@@ -1,4 +1,4 @@
-package com.somekoder.library.core_mvi.viewmodel
+package com.somekoder.clark.mvi.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

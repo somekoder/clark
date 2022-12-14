@@ -1,4 +1,4 @@
-package com.somekoder.library.core_mvi.util
+package com.somekoder.clark.mvi.util
 
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
